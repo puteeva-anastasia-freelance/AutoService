@@ -1,0 +1,1 @@
+"use strict";class PriceDTO{constructor(i,s,t){this.id=i,this.name=s,this.minPrice=t}}
