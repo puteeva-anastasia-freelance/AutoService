@@ -1,0 +1,126 @@
+.price
+	display: flex
+	position: fixed
+	top: 0
+	bottom: 0
+	z-index: 1000
+	width: 100%
+	height: 100%
+	left: 0
+	right: 0
+
+	&__container
+		height: 100%
+		width: 100%
+
+	&__body
+		margin: auto
+		width: 900px
+		position: relative
+		box-sizing: border-box
+		background-color: #fff
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		padding: 34px 65px 42px
+		height: 100%
+
+		@media (max-width: 900px)
+			width: 100%
+
+		@media (max-width: 667px)
+			padding: 35px 30px 0
+
+		@media (max-width: 400px)
+			padding-left: 25px
+			padding-right: 25px
+
+	&__title
+		font-family: $inter-font
+		font-size: 30px
+		text-align: center
+		text-transform: uppercase
+		color: $accent
+		font-weight: 400
+		margin: 0
+
+		@media (max-width: 667px)
+			font-size: 25px
+
+		@media (max-width: 400px)
+			font-size: 20px
+
+	&__txt
+		color: #4C525A
+		font-size: 16px
+		font-family: $inter-font
+		text-align: center
+		margin-bottom: 36px
+
+		@media (max-width: 667px)
+			margin-top: 0
+			margin-bottom: 0
+
+		@media (max-width: 400px)
+			font-size: 13px
+
+	&__list
+		overflow-y: auto
+		height: calc(100% - 202px)
+		width: 100%
+		padding-left: 16px
+
+		@media (max-width: 768px)
+			padding-left: 0
+
+		@media (max-width: 667px)
+			height: calc(100% - 170px)
+
+		@media (max-width: 400px)
+			height: calc(100% - 140px)
+
+	&__item
+		width: 100%
+		margin-bottom: 19px
+
+	&__name
+		font-family: $inter-font
+		font-weight: 500
+		font-size: 16px
+		line-height: 19px
+		text-align: center
+		width: 100%
+		display: block
+
+		@media (max-width: 400px)
+			font-size: 13px
+			line-height: 16px
+
+	&__value
+		font-size: 16px
+		font-family: $inter-font
+		line-height: 19px
+		text-align: center
+		width: 100%
+		display: block
+
+		@media (max-width: 400px)
+			font-size: 13px
+			line-height: 16px
+
+	&__close
+		position: absolute
+		top: 26px
+		right: 26px
+
+		@media (max-width: 667px)
+			right: 10px
+			top: 15px
+
+		svg
+			stroke: #000000
+			transition: stroke .2s ease-in-out
+
+		&:hover
+			svg
+				stroke: #646464

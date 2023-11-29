@@ -1,0 +1,33 @@
+<?php
+
+$recepient = "adept.auto.service@gmail.com";
+$sitename = "adept-auto.by";
+$headers = 'MIME-Version: 1.0' . "\r\n";
+$headers .= "Content-type: text/html; charset=utf-8 \r\n";
+$headers .= "From: adept-auto.by <postmaster@adept-auto.by>\r\n";
+
+$message = '';
+if(!empty($_POST['name-form'])){
+	$message .= "Заявка с формы: " . $_POST['name-form'] . '</br>';
+}
+if(!empty($_POST['name'])){
+	$message .= "Ваше имя: " . $_POST['name'] . '</br>';
+}
+
+$message .= "Ваш номер телефона: " . $_POST['phone'] . '</br>';
+
+if(!empty($_POST['brand'])){
+	$message .= "Марка автомобиля: " . $_POST['brand'] . '</br>';
+}
+
+if(!empty($_POST['defect'])){
+	$message .= "Неисправность автомобиля: " . $_POST['defect'] . '</br>';
+}
+
+$pagetitle = "Новая заявка с нашего сайта " . $sitename;
+
+if(mail($recepient, $pagetitle, $message, $headers)){
+	echo 'Успешно отправлено!';
+} else {
+	echo 'Отправка не удалась!';
+}

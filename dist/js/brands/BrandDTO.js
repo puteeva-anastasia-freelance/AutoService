@@ -1,0 +1,1 @@
+"use strict";class BrandDTO{constructor(s,t,i){this.id=s,this.name=t,this.image=i}}

@@ -1,0 +1,213 @@
+.consultation
+	display: flex
+
+	@media (max-width: 1260px)
+		flex-direction: column
+
+	&__left
+		background: linear-gradient(90deg, #051A2C 0%, #0B3B66 100%)
+		width: 50%
+		padding-left: 40px
+		box-sizing: border-box
+		padding-top: 36px
+		padding-bottom: 88px
+		padding-right: 40px
+
+		@media (max-width: 1260px)
+			width: 100%
+			padding: 24px 6.1% 66px
+
+		@media (max-width: 625px)
+			padding-left: 16px
+			padding-right: 16px
+
+		@media (max-width: 580px)
+			padding-top: 16.5px
+			padding-bottom: 57.5px
+
+		@media (max-width: 400px)
+			padding-top: 9px
+			padding-bottom: 49px
+
+	&__inner
+		max-width: 636px
+		margin-left: auto
+
+		@media (max-width: 1260px)
+			max-width: inherit
+
+	&__title
+		font-size: 40px
+		color: white
+		font-weight: 600
+
+		@media (max-width: 1260px)
+			margin-bottom: 16px
+
+		@media (max-width: 992px)
+			margin-bottom: 0
+
+		@media (max-width: 580px)
+			font-size: 29px
+
+		@media (max-width: 400px)
+			font-size: 18px
+
+		&-right
+			@media (max-width: 580px)
+				font-size: 30px
+				margin-bottom: 50px
+
+			@media (max-width: 400px)
+				font-size: 20px
+
+	&__txt
+		font-weight: 600
+		font-size: 20px
+		line-height: 34px
+		color: white
+		width: 92%
+		margin-bottom: 51px
+
+		@media (max-width: 1260px)
+			margin-bottom: 41px
+			width: 100%
+
+		@media (max-width: 580px)
+			font-size: 17px
+			line-height: 25.5px
+			font-weight: 500
+			margin-bottom: 39.5px
+
+		@media (max-width: 400px)
+			font-size: 14px
+			line-height: 17px
+			margin-bottom: 37px
+
+	&__brands
+		display: flex
+		justify-content: space-between
+		align-items: center
+		width: 548px
+		margin-top: 0px
+		margin-bottom: 26px
+		margin-left: 2px
+
+		@media (max-width: 1260px)
+			margin-left: auto
+			margin-right: auto
+
+		@media (max-width: 625px)
+			width: 100%
+
+		@media (max-width: 580px)
+			width: 368px
+			margin-bottom: 21px
+
+		@media (max-width: 400px)
+			width: 259px
+			margin-bottom: 16px
+
+	&__brand
+		width: 55px
+		height: 55px
+
+		@media (max-width: 580px)
+			width: 40px
+			height: 40px
+
+		@media (max-width: 400px)
+			width: 25px
+			height: 25px
+		
+		img
+			object-fit: fill
+
+	&__right
+		width: 50%
+		padding-right: 40px
+		box-sizing: border-box
+		padding-top: 37px
+
+		@media (max-width: 1260px)
+			width: 100%
+
+		@media (max-width: 580px)
+			padding-top: 31.5px
+			padding-right: 0
+
+		@media (max-width: 400px)
+			padding-top: 26px
+
+		&-inner
+			margin-left: auto
+			width: 323px
+			padding-left: 40px
+
+			@media (max-width: 1260px)
+				padding-left: 8.6%
+				padding-left: 8.6%
+				margin-left: 0
+				padding-bottom: 140px
+
+			@media (max-width: 625px)
+				padding-left: 16px
+				padding-right: 16px
+
+			@media (max-width: 580px)
+				width: 100%
+				box-sizing: border-box
+				display: flex
+				flex-wrap: wrap
+				justify-content: center
+				padding-bottom: 76px
+
+	&__wrap
+		max-width: 405px
+
+		@media (max-width: 1260px)
+			max-width: inherit
+
+	&__headline
+		color: $accent
+		font-weight: 600
+		font-size: 20px
+		display: block
+		margin-top: 60px
+
+		@media (max-width: 580px)
+			font-size: 18px
+			margin-top: 0
+			width: 100%
+
+		@media (max-width: 400px)
+			font-size: 16px
+
+	&__data
+		margin-top: -5px
+		display: block
+		font-weight: 600
+		font-size: 20px
+		line-height: 34px
+		color: white
+		margin-bottom: -41px
+
+		@media (max-width: 580px)
+			font-size: 18px
+			width: 100%
+			margin-bottom: 12px
+
+		@media (max-width: 400px)
+			font-size: 16px
+
+	&__button
+		margin-top: 82px
+		padding: 19px 39px
+
+		@media (max-width: 580px)
+			margin-top: 49.5px
+			padding: 16px 39px
+
+		@media (max-width: 400px)
+			margin-top: 17px
+			padding: 13px 39px

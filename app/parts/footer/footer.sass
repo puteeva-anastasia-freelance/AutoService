@@ -1,0 +1,198 @@
+.main-footer
+	display: flex
+	flex-wrap: wrap
+
+	&__left
+		width: 50%
+		box-sizing: border-box
+		background-color: #051A2C
+		padding-left: 40px
+		padding-top: 45px
+		padding-bottom: 9px
+		padding-right: 40px
+
+		@media (max-width: 1090px)
+			width: 64.7%
+			padding-top: 43px
+
+		@media (max-width: 992px)
+			padding-left: 16px
+			padding-right: 16px
+
+		@media (max-width: 800px)
+			width: 100%
+
+		@media (max-width: 483px)
+			padding-top: 33px
+
+		&-wrap
+			max-width: 636px
+			margin-left: auto
+
+			.main-footer__copyright-txt
+				margin-top: 1px
+				margin-left: -3px
+
+				@media (max-width: 1090px)
+					display: none
+
+			@media (max-width: 1090px)
+				max-width: inherit
+
+	&__item
+		font-family: $inter-font
+		font-weight: 600
+		font-size: 14px
+		color: #2F3338
+		display: flex
+		align-items: center
+		text-decoration: none
+		margin-right: 16px
+
+		&:hover
+			text-decoration: underline
+
+		&-adress
+			@media (max-width: 1090px)
+				order: 1
+
+			&:hover
+				text-decoration: none
+
+		&-email
+			@media (max-width: 1090px)
+				order: 2
+
+		@media (max-width: 1370px)
+			margin-right: 38px
+
+		@media (max-width: 1090px)
+			color: #fff
+			margin-bottom: 24px
+			margin-top: 0px
+
+		&:last-child
+			margin-right: 0
+
+	&__icon
+		margin-right: 5px
+
+		@media (max-width: 1090px)
+			margin-right: 3px
+
+			&-adress
+				margin-right: 7px
+
+	&__right
+		padding-left: 8px
+		padding-top: 21px
+		padding-right: 40px
+		width: 50%
+		box-sizing: border-box
+		max-width: 720px
+
+		@media (max-width: 1090px)
+			background-color: #2F3338
+			max-width: inherit
+			width: 35.3%
+			padding-left: 0
+			padding-top: 43px
+			padding-bottom: 16px
+
+		@media (max-width: 992px)
+			padding-right: 16px
+
+		@media (max-width: 800px)
+			width: 100%
+			padding-left: 16px
+
+		@media (max-width: 600px)
+			padding-bottom: 5px
+
+		@media (max-width: 483px)
+			padding-top: 37px
+
+	&__top
+		display: flex
+		justify-content: space-between
+
+		@media (max-width: 1370px)
+			flex-wrap: wrap
+			justify-content: flex-start
+
+	&__bottom
+		display: flex
+		justify-content: flex-end
+		padding-top: 14px
+
+		@media (max-width: 1090px)
+			display: none
+
+		@media (max-width: 600px)
+			display: block
+
+	&__itoblaka
+		display: flex
+		align-items: center
+		font-family: $inter-font
+		font-size: 14px
+		color: $txt
+		text-decoration: none
+
+		@media (max-width: 600px)
+			color: #fff
+			justify-content: center
+			margin-top: 29px
+
+		&-icon
+			margin-left: 8px
+			fill: black
+
+			@media (max-width: 1090px)
+				margin-left: 12px
+
+			@media (max-width: 600px)
+				margin-left: 11px
+				fill: white
+
+	&__logo
+		@media (max-width: 1090px)
+			width: 451px
+			height: 36px
+
+		@media (max-width: 483px)
+			width: 288px
+			height: 23px
+
+	&__copyright
+		width: 100%
+		border-top: 1px solid #000000
+		background-color: #2F3338
+		display: none
+		position: relative
+
+		@media (max-width: 1090px)
+			display: block
+
+		@media (max-width: 483px)
+			padding: 2px 0
+
+		&-container
+			display: flex
+			justify-content: space-between
+			align-items: center
+
+		&-txt
+			font-family: $inter-font
+			font-size: 14px
+			color: #FFFFFF
+
+		&-itoblaka
+			display: none
+
+			@media (max-width: 1090px)
+				display: flex
+				color: #fff
+
+			@media (max-width: 600px)
+				display: none

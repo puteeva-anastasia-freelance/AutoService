@@ -1,0 +1,295 @@
+.main-header
+	display: flex
+
+	@media (max-width: 700px)
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+		z-index: 999
+
+	&.active
+		z-index: 1001
+
+	&__container
+		padding: 39px 40px 19px 40px
+		background-color: #051A2C
+		width: 50%
+		box-sizing: border-box
+
+		@media (max-width: 1043px)
+			padding-top: 44px
+
+		@media (max-width: 992px)
+			padding-left: 16px
+			padding-right: 16px
+
+		@media (max-width: 814px)
+			width: 100%
+
+		@media (max-width: 500px)
+			padding-top: 19px
+			padding-bottom: 12px
+
+		&-right
+			width: 50%
+			padding-right: 40px
+			box-sizing: border-box
+			padding-left: 40px
+
+			@media (max-width: 992px)
+				padding-left: 16px
+				padding-right: 16px
+
+			@media (max-width: 900px)
+				background-color: #051A2C
+
+	&__left
+		max-width: 640px
+		margin-left: auto
+
+	&__adress
+		font-weight: 600
+		font-size: 12px
+		color: #FFFFFF
+		display: block
+
+		@media (max-width: 500px)
+			font-size: 10px
+
+	&__logo
+		margin-bottom: 4px
+
+		@media (max-width: 1043px)
+			width: 375px
+			height: 30px
+
+		@media (max-width: 550px)
+			width: 204px
+			height: 16px
+			margin-bottom: -2.5px
+
+		@media (max-width: 400px)
+			width: 176px
+
+	&__right
+		max-width: 640px
+		padding-top: 46px
+
+		@media (max-width: 700px)
+			width: 100%
+
+		@media (max-width: 500px)
+			padding-top: 22px
+
+		&-inner
+			width: 440px
+			margin-left: auto
+			display: flex
+
+			@media (max-width: 992px)
+				width: auto
+
+			@media (max-width: 900px)
+				justify-content: flex-end
+
+			@media (max-width: 700px)
+				align-items: flex-start
+				justify-content: space-between
+
+	&__phone
+		text-decoration: none
+		font-family: $inter-font
+		font-weight: 600
+		font-size: 18px
+		color: #FFFFFF
+		display: flex
+		align-items: center
+
+		@media (max-width: 1043px)
+			font-size: 17px
+
+		@media (max-width: 700px)
+			margin-left: 6px
+			margin-top: -3px
+
+		&-txt
+			@media (max-width: 900px)
+				display: none
+
+		&:hover
+			text-decoration: underline
+
+		&-icon
+			margin-right: 8px
+
+			@media (max-width: 700px)
+				margin-right: 0
+
+			@media (max-width: 400px)
+				width: 25px
+				height: 25px
+
+	&__request-call
+		font-family: $inter-font
+		font-weight: 700
+		font-size: 18px
+		color: $accent
+		text-transform: uppercase
+		padding: 0
+		margin-left: 38px
+		transition: color .2s ease-in-out
+		white-space: nowrap
+
+		@media (max-width: 700px)
+			display: none
+
+		&:hover
+			text-decoration: underline
+
+		@media (max-width: 1043px)
+			font-size: 17px
+
+		@media (max-width: 900px)
+			font-size: 18px
+			margin-left: 14px
+
+	&__bottom
+		width: 100%
+		position: fixed
+		top: 0
+		left: 0
+		background-color: #2F3338
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+		padding-top: 25px
+		padding-bottom: 23px
+
+		@media (max-width: 700px)
+			display: none
+
+		&.default
+			opacity: 0
+			z-index: -1
+
+		&.fixed
+			opacity: 1
+			z-index: 99
+
+		&-container
+			max-width: 1358px
+			display: flex
+			justify-content: space-between
+			align-items: center
+
+		&-right
+			display: flex
+
+	&__list
+		padding: 0
+		list-style-type: none
+		display: flex
+		margin: 0
+
+	&__nav
+		width: 50%
+
+	&__link
+		font-family: $inter-font
+		font-weight: 700
+		font-size: 18px
+		text-transform: uppercase
+		color: #fff
+		text-decoration: none
+		transition: color .2s ease-in-out
+
+		@media (max-width: 900px)
+			font-size: 16px
+
+		&:hover
+			color: $accent
+
+		&.active
+			color: $accent
+
+	&__item
+		margin-right: 9.8%
+
+		@media (max-width: 900px)
+			margin-right: 8.4%
+
+	&__mobile-burger
+		display: none
+
+		@media (max-width: 700px)
+			display: block
+			margin-right: -6px
+
+		&.cross
+			background-image: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.4999 9.11526L18.62 0.995135C19.0024 0.612746 19.6224 0.612746 20.0048 0.995135C20.3872 1.37752 20.3872 1.9975 20.0048 2.37989L11.8847 10.5L20.0048 18.6201C20.3872 19.0025 20.3872 19.6225 20.0048 20.0049C19.6224 20.3873 19.0024 20.3873 18.62 20.0049L10.4999 11.8848L2.37979 20.0049C1.99741 20.3873 1.37743 20.3873 0.995043 20.0049C0.612655 19.6225 0.612655 19.0025 0.995043 18.6201L9.11517 10.5L0.995043 2.37989C0.612655 1.9975 0.612655 1.37752 0.995043 0.995135C1.37743 0.612746 1.99741 0.612746 2.37979 0.995135L10.4999 9.11526Z' fill='white'/%3E%3C/svg%3E%0A")
+			background-position: 50%
+			background-repeat: no-repeat
+			background-size: contain
+			height: 20px
+			width: 20px
+			margin-right: 3px
+
+			svg
+				display: none
+
+	&__mobile-menu
+		display: none
+
+		@media (max-width: 700px)
+			display: block
+			background-color: #fff
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+			box-sizing: border-box
+			overflow: hidden
+			padding: 18px 0 50px
+			position: absolute
+			right: 0
+			transition: width .2s ease-in-out
+			width: 0
+			z-index: 999
+
+		&.active
+			max-width: 450px
+			padding: 24px
+			width: 82%
+
+			@media (max-width: 576px)
+				padding: 15px 20px
+
+		.main-header__list
+			flex-wrap: wrap
+
+		.main-header__item
+			width: 100%
+
+		.main-header__link
+			color: #000
+			font-weight: 500
+			font-size: 18px
+			padding: 10.5px 0
+			display: block
+			font-family: $default-font
+			white-space: nowrap
+			transition: color .2s ease-in-out
+
+			&:hover
+				color: $accent
+
+.bg-header
+	background: 100% 100% / contain no-repeat url(../img/dist/bg-header-576.webp), linear-gradient(90.3deg, #051A2C 0.26%, #0A3963 99.75%)
+
+	@media (min-width: 576px)
+		background: 100% 100% / contain no-repeat url(../img/dist/bg-header.webp), linear-gradient(90.3deg, #051A2C 0.26%, #0A3963 99.75%)
+
+	@media (max-width: 992px)
+		background-size: 120%
+
+	@media (max-width: 768px)
+		background-size: 140%
+
+	@media (max-width: 576px)
+		background-size: 160%

@@ -1,0 +1,156 @@
+.h1
+	font-weight: 700
+	font-size: 40px
+	line-height: 49px
+	color: #FFFFFF
+	margin: 0
+
+	@media (max-width: 611px)
+		font-size: 29px
+		text-transform: uppercase
+		line-height: 35.5px
+
+	@media (max-width: 483px)
+		font-size: 23.5px
+		line-height: 29px
+
+	@media (max-width: 397px)
+		font-size: 18px
+		line-height: 22px
+
+.h2
+	font-weight: 600
+	font-size: 48px
+	text-align: center
+	text-transform: uppercase
+	margin: 0
+	color: #0B3B66
+
+	@media (max-width: 992px)
+		font-size: 30px
+
+	@media (max-width: 768px)
+		font-size: 25px
+
+	@media (max-width: 576px)
+		font-size: 20px
+
+.h3
+	font-weight: 600
+	font-size: 20px
+	line-height: 140%
+	text-transform: uppercase
+	text-align: center
+	margin: 0
+
+	@media (max-width: 992px)
+		font-size: 18px
+		line-height: 156%
+
+	@media (max-width: 500px)
+		color: #fff
+
+.h4
+	font-weight: 600
+	font-size: 20px
+	text-align: center
+	text-transform: uppercase
+	color: #000000
+	width: 100%
+	margin-top: 26.6px
+	margin-bottom: 26.6px
+
+	@media (max-width: 992px)
+		font-size: 18px
+		margin-top: 25px
+		margin-bottom: 29px
+
+	@media (max-width: 768px)
+		font-size: 16px
+		margin-top: 23.5px
+		margin-bottom: 18.5px
+
+	@media (max-width: 576px)
+		font-size: 14px
+		margin-top: 22px
+		margin-bottom: 8px
+		width: 99%
+		margin-left: auto
+		margin-right: auto
+		line-height: 17px
+
+.h5
+	font-weight: 600
+	font-size: 18px
+	line-height: 22px
+	color: #FFFFFF
+	margin: 0
+	min-height: 44px
+	width: 100%
+
+	@media (max-width: 1399.5px)
+		min-height: 66px
+
+	@media (max-width: 1075px)
+		min-height: 44px
+
+	@media (max-width: 667px)
+		font-size: 15px
+		line-height: 18.5px
+		min-height: inherit
+
+	@media (max-width: 400px)
+		font-size: 12px
+		line-height: 15px
+
+.txt
+	font-weight: 500
+	font-size: 18px
+	line-height: 26px
+	color: #FFFFFF
+
+.button
+	display: inline-block
+	text-decoration: none
+	padding: 10px 19px
+	color: $accent
+	font-size: 18px
+	border-radius: 10px
+	cursor: pointer
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+	font-family: $inter-font
+	font-weight: 500
+	text-transform: uppercase
+	background-color: #FFFFFF
+	padding: 20px 39px
+	transition: background-color .2s ease-in-out, color .2s ease-in-out
+
+	@media (max-width: 611px)
+		font-size: 16px
+		padding: 16px 39px
+
+	@media (max-width: 483px)
+		font-size: 14px
+		padding: 13px 33px
+
+	&:hover
+		background-color: #4C525A
+		color: #FFFFFF
+
+	&:active
+		box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25)
+		background-color: #FFFFFF
+		color: $accent
+
+	&__red
+		background: linear-gradient(91.64deg, $accent 0%, #EC6666 39.88%, #D60000 104.9%)
+		color: #fff
+		font-weight: 600
+		transition: none
+
+		&:hover
+			background: #D60000
+
+		&:active
+			box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25)
+			color: #fff

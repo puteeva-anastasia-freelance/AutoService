@@ -1,0 +1,198 @@
+.about
+	padding: 75px 0 144px
+
+	@media (max-width: 992px)
+		padding-top: 81px
+		padding-bottom: 53px
+
+	@media (max-width: 676px)
+		padding-top: 86px
+
+	@media (max-width: 580px)
+		padding-top: 60px
+		padding-bottom: 39.5px
+
+	@media (max-width: 400px)
+		padding-top: 39px
+		padding-bottom: 26px
+
+	&__container
+		max-width: 1142px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: flex-start
+
+		@media (max-width: 580px)
+			flex-direction: column-reverse
+
+	&__images
+		display: flex
+		flex-wrap: wrap
+		max-width: 542px
+		justify-content: space-between
+		align-items: flex-end
+
+		@media (max-width: 1200px)
+			max-width: 455px
+
+		@media (max-width: 950px)
+			max-width: 286px
+
+		@media (max-width: 676px)
+			max-width: 241px
+
+		@media (max-width: 580px)
+			justify-content: flex-start
+			margin: 0 auto
+			max-width: 286px
+
+	&__img
+		width: 264px
+		height: 229px
+		margin-bottom: 14px
+
+		@media (max-width: 1200px)
+			width: 216px
+			height: 188px
+			margin-bottom: 24px
+
+		@media (max-width: 950px)
+			width: 138px
+
+		@media (max-width: 676px)
+			width: 114px
+			height: 99px
+			margin-bottom: 13px
+
+		@media (max-width: 580px)
+			height: 60px
+			width: 94px
+			margin-right: 10px
+			margin-bottom: 7px
+
+			&:last-child
+				margin-right: 0
+
+		&_big
+			height: 459px
+
+			@media (max-width: 1200px)
+				height: 375px
+
+			@media (max-width: 676px)
+				height: 198px
+
+			@media (max-width: 580px)
+				height: 120px
+				width: 138px
+
+		&-3
+			align-self: start
+
+			@media (max-width: 580px)
+				margin-left: 44px
+
+	&__svg
+		display: flex
+		justify-content: center
+		margin-bottom: 33px
+
+		@media (max-width: 1200px)
+			width: 100px
+			height: 100px
+			margin: 0 auto 85px
+
+		@media (max-width: 676px)
+			margin-bottom: 0
+			height: 90px
+
+			svg
+				width: 64px
+				height: 64px
+
+		@media (max-width: 580px)
+			display: none
+
+	&__wrap
+		width: 48.5%
+		margin-top: 198px
+
+		@media (max-width: 1200px)
+			margin-top: 67.5px
+			width: 47.8%
+
+		@media (max-width: 950px)
+			width: 61%
+
+		@media (max-width: 813px)
+			width: 54%
+
+		@media (max-width: 676px)
+			width: 50%
+			margin-top: -30px
+
+		@media (max-width: 580px)
+			width: 100%
+			margin-top: 0
+			margin-bottom: 23px
+
+	&__title
+		font-size: 40px
+		text-align: left
+
+		@media (max-width: 992px)
+			font-size: 30px
+
+		@media (max-width: 676px)
+			font-size: 20px
+
+		@media (max-width: 580px)
+			text-align: center
+
+	&__txt
+		font-weight: 500
+		font-size: 18px
+		line-height: 167%
+		margin: 0
+		margin-top: 37px
+		margin-left: 1px
+
+		@media (max-width: 992px)
+			font-size: 14px
+			line-height: 214%
+			margin-top: 42px
+
+		@media (max-width: 676px)
+			font-size: 12px
+			line-height: 142%
+			margin-top: 24px
+			margin-left: 0
+
+		@media (max-width: 580px)
+			margin-top: 33.5px
+
+		@media (max-width: 400px)
+			font-size: 12px
+			line-height: 133%
+			margin-top: 25px
+
+	&__list
+		font-weight: 500
+		font-size: 18px
+		line-height: 167%
+		margin: 0
+		padding-left: 28px
+
+		@media (max-width: 992px)
+			font-size: 14px
+			line-height: 214%
+			padding-left: 22px
+
+		@media (max-width: 676px)
+			font-size: 12px
+			line-height: 142%
+			padding-left: 18px
+
+		@media (max-width: 400px)
+			line-height: 133%
